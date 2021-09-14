@@ -20,19 +20,19 @@ function gotResults(error, results)
     document.getElementById("result_confidence").innerHTML='Accuracy - '+(results[0].confidence*100).toFixed(2)+" %";
     document.getElementById("result_label").style.color="rgb("+random_number_r+","+random_number_g+","+random_number_b+")";
     document.getElementById("result_confidence").style.color="rgb("+random_number_r+","+random_number_g+","+random_number_b+")";
-if (results[0].label == "barking") { 
-    img1.src = 'dog barking.gif';
+if (results[0].label == "dog barking") { 
+    animal1.src = 'dog barking.gif';
      }
-    else if (results[0].label == "background") { 
-        img1.src = 'sound_.jpeg';
-         
-      if (results[0].label == "roaring") { 
-         img1.src = 'roar.gif';
+    else if (results[0].label == "background noise") { 
+        animal1.src = 'sound_.jpeg';
+    }
+        else if (results[0].label == "lion roaring") { 
+         animal1.src = 'roar.gif';
      }
-        else if (results[0].label == "meow") {
-             img1.src = 'cat-meow.gif'; 
-     }       else if (results[0].label == "mooing"){ 
-                img1.src = 'cow.gif';
+        else if (results[0].label == "cat meowing") {
+             animal1.src = 'cat-meow.gif'; 
+     }       else if (results[0].label == "cow mooing"){ 
+                animal1.src = 'cow.gif';
 
-            }}}}
+            }}}
 
