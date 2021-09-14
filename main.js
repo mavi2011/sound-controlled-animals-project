@@ -26,7 +26,7 @@ if (results[0].label == "barking") {
     else if (results[0].label == "background") { 
         img.src = 'sound_.jpeg';
          
-     else if (results[0].label == "roaring") { 
+      if (results[0].label == "roaring") { 
          img.src = 'roar.gif';
      }
         else if (results[0].label == "meow") {
