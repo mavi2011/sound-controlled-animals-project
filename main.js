@@ -23,12 +23,16 @@ function gotResults(error, results)
 if (results[0].label == "barking") { 
     img.src = 'dog barking.gif';
      }
+    else if (results[0].label == "background") { 
+        img.src = 'sound_.jpeg';
+         
      else if (results[0].label == "roaring") { 
-         img1.src = 'roar.gif';
-        } 
+         img.src = 'roar.gif';
+     }
         else if (results[0].label == "meow") {
-             img.src = 'cat'; 
+             img.src = 'cat-meow.gif'; 
+
             }else if (results[0].label == "mooing"){ 
                 img.src = 'cow.gif';
-            } } }
+            }}}}
 
