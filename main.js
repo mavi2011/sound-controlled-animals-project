@@ -21,18 +21,18 @@ function gotResults(error, results)
     document.getElementById("result_label").style.color="rgb("+random_number_r+","+random_number_g+","+random_number_b+")";
     document.getElementById("result_confidence").style.color="rgb("+random_number_r+","+random_number_g+","+random_number_b+")";
 if (results[0].label == "barking") { 
-    img.src = 'dog barking.gif';
+    img1.src = 'dog barking.gif';
      }
     else if (results[0].label == "background") { 
         img.src = 'sound_.jpeg';
          
       if (results[0].label == "roaring") { 
-         img.src = 'roar.gif';
+         img1.src = 'roar.gif';
      }
         else if (results[0].label == "meow") {
-             img.src = 'cat-meow.gif'; 
+             img1.src = 'cat-meow.gif'; 
 
             }else if (results[0].label == "mooing"){ 
-                img.src = 'cow.gif';
+                img1.src = 'cow.gif';
             }}}}
 
