@@ -22,17 +22,21 @@ function gotResults(error, results)
     document.getElementById("result_confidence").style.color="rgb("+random_number_r+","+random_number_g+","+random_number_b+")";
 if (results[0].label == "barking") { 
     img1.src = 'dog barking.gif';
+    img2.src = 'sound_.jpeg';
      }
     else if (results[0].label == "background") { 
-        img.src = 'sound_.jpeg';
+        img1.src = 'sound_.jpeg';
          
       if (results[0].label == "roaring") { 
          img1.src = 'roar.gif';
+         img2.src = 'sound_.jpeg';
      }
         else if (results[0].label == "meow") {
              img1.src = 'cat-meow.gif'; 
-
+             img2.src = 'sound_.jpeg';
+             
             }else if (results[0].label == "mooing"){ 
                 img1.src = 'cow.gif';
+                img2.src = 'sound_.jpeg';
             }}}}
 
